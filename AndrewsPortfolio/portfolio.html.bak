@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="uft-8"/>
+	<title>Page title</title>
+<!--- activates CSS --->	
+	<link rel="stylesheet" href="styles.css"
+</head>
+<body>
+<!--- Navigation Bar --->	
+	<div class="container">
+		<div class="nav-wrapper">
+			<div class="left-side">
+				<div class="nav-link-wrapper active-nav-link">
+					<a href="portfolio.html">Home</a>
+				</div>
+				<div class="nav-link-wrapper">
+					<a href="aboutpage.html">About</a>
+				</div>
+			</div>
+<!--- name on right side --->	
+				<div class="right-side">
+					<div class="brand">
+				<div>ANDREW SPECK</div>
+					</div>		
+			</div>	
+		</div>
+	</div>
+<!--- everything under the nav wrapper --->
+			<div class="content-wrapper">
+<!--- this creates the portfolio boxes --->			
+				<div class="portfolio-items-wrapper">
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(portfolio1.jpg)"></div>
+						<div class="img-text-wrapper">
+							<div class="subtitles">
+								HTML
+							</div>
+						</div>	
+					</div>
+
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(portfolio2.jpg)"></div>					 
+						<div class="img-text-wrapper">
+							<div class="subtitles">
+								C++
+							</div>
+						</div>	
+					</div>
+
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(portfolio3.jpg)"></div>					 
+						<div class="img-text-wrapper">
+							<div class="subtitles">
+								SQL
+							</div>
+						</div>	
+					</div>
+
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(portfolio4.jpg)"></div>					 
+						<div class="img-text-wrapper">
+							<div class="subtitles">
+								Python
+							</div>
+						</div>	
+					</div>
+
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(portfolio5.jpg)"></div>					 
+						<div class="img-text-wrapper">
+							<div class="subtitles">
+								Management
+							</div>
+						</div>	
+					</div>
+
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(portfolio6.jpg)"></div>					 
+						<div class="img-text-wrapper">
+							<div class="subtitles">
+								UX/UI
+							</div>
+						</div>	
+					</div>
+
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(portfolio7.jpg)"></div>					 
+						<div class="img-text-wrapper">
+							<div class="subtitles">
+								Coming Soon
+							</div>
+						</div>	
+					</div>
+
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(portfolio8.jpg)"></div>
+						<a href="https://www.linkedin.com/in/andrew-speck-4b992a227 ">background-image</a>
+						<div class="img-text-wrapper">											
+							<div class="subtitles">
+								Linkedin
+							</div>
+						</div>	
+					</div>
+					
+					<div class="portfolio-item-wrapper">
+						<div class="portfolio-img-background" style="background-image:url(portfolio9.jpg)"></div>
+						<div class="img-text-wrapper">
+							<div class="subtitles">
+								Coming Soon
+							</div>
+						</div>	
+					</div>
+				</div>			
+			</div>
+</body>
+
+<!--- javascript :( --->
+<script>
+
+	const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+	portfolioItems.forEach(portfolioItem => {
+	
+		portfolioItem.addEventListener('mouseover',() => {
+			
+			console.log(portfolioItem.childNodes[1].classList);
+			
+			portfolioItem.childNodes[1].classList.add('img-darken');	
+			
+		})
+		
+		portfolioItem.addEventListener('mouseout',() => {
+			
+			console.log(portfolioItem.childNodes[1].classList);
+			
+			portfolioItem.childNodes[1].classList.remove('img-darken');	
+			
+		})
+	})
+
+
+
+
+</script>
+
+
+
+
+
+</html>

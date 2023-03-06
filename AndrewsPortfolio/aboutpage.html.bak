@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="uft-8"/>
+	<title>About</title>
+	<link rel="stylesheet" href="styles.css"
+</head>
+<body>
+	<h3>About Me</h3>
+
+<div class="container">
+
+		<div class="nav-wrapper">
+			<div class="left-side">
+					<div class="nav-link-wrapper">
+						<a href="portfolio.html">Home</a>
+					</div>
+				
+					<div class="nav-link-wrapper">
+						<a href="aboutpage.html">About</a>
+					</div>
+			</div>
+				
+				
+				
+				
+			
+			
+			
+			
+			
+		</div>
+		
+
+</div>
+
+
+<p>Hello my name is Andrew and I Information Systems Managment.</P>
+
+
+
+
+
+
+
+
+</body>
+</html>
